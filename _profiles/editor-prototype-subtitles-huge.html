@@ -1,0 +1,32 @@
+---
+#
+# The human-friendly name of the profile. Whenever you're asked for the profile
+# ID, it refers to the name of the profile file — in this case, "default".
+#
+name: "Editor Prototype - Subtitles Task (Huge)"
+
+#
+# The default profile will be the one shown when accessing the root URL of your
+# SpeedTracker site.
+#
+default: false
+
+#
+# If you want tests to be repeated automatically, you can an interval (in hours)
+# with a minimum value of 12, as only two scheduled tests per day are allowed.
+# To disabled repeated tests, simply remove this property from the profile.
+#
+interval: 12
+
+#
+# WebPageTest test parameters.
+# For a list of supported params, check:
+#
+# https://www.npmjs.com/package/webpagetest
+#
+parameters:
+  connectivity: "Cable"
+  location: "Dulles:Chrome"
+  runs: 1
+  url: "http://unbabel.gitlab.io/web-interface-prototype/"
+---
